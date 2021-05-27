@@ -5,14 +5,6 @@
     -webkit-tap-highlight-color: transparent
 }
 
-body {
-    background: #f6f8fa url(https://api.apibug.com/api/ecy/&apiKey=72c1f1258741e617b805dd938a387639) top;
-    color: #3f4347;
-    font-size: 12px;
-    font-family: sans-serif;
-    line-height: 1;
-    position: relative
-}
 
 ::-webkit-scrollbar {
     width: 7px;
