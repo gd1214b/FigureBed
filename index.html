@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
 	<!-- Baidu Web Analytics -->
 	<script>
 		var _hmt = _hmt || [];
@@ -13,7 +14,7 @@
 		})();
 	</script>
 	<!-- End Baidu Web Analytics -->
-	
+
 	<!-- Cloudflare Web Analytics -->
 	<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
 		data-cf-beacon='{"token": "88bcb2b614ef450090a37c1e9ad3f75b"}'></script>
@@ -27,50 +28,59 @@
 		})(window, document, "clarity", "script", "7srhmzrsrh");
 	</script>
 
+
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
 	<title>gd1214b图床</title>
-	<meta name="keywords" content="gd1214b图床" />
+	<meta name="keywords" content="多合一图床,CDN图床,百度图床,阿里图床,京东图床,搜狗图床,搜狐图床,QQ图床,XKX图床,58图床,头条图床,网易图床,360图床,葫芦侠图床" />
 	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/gd1214b/FigureBed@main/favicon.ico" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gd1214b/FigureBed@main/static/style.min.css">
+	<link rel="stylesheet" href="./static/style.css">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/gd1214b/FigureBed@main/static/file.min.js"></script>
+	<script src="./static/file2.js"></script>
+
+	<meta name="referrer" content="no-referrer" />
 </head>
 
 <body>
 	<input id="file" type="file" multiple="multiple" style="display: none;">
+	<input id="token" type="txet" value="YTQ4YTZlZjc3MGUwNTljOWI3MTc1NGNiMmUyN2JjMjU=" style="display: none;">
 	<div class="container">
 		<div class="upload">
 			<div class="title">开始上传
+
 				<select id="type" value="">
-					<option disabled>-5M限制-</option>
-					<option value="tt" selected>头条图床</option>
+					<option value="" selected>请选择图床</option>
+					<option value="gtimg">极图图床</option>
+					<option value="muke">慕课图床</option>
+					<option value="niupic">牛图图床</option>
+					<option value="ai58">58 图床</option>
+					<option value="imgbox">图盒图床</option>
+					<option value="sougou">搜狗图床</option>
+					<option value="catbox">猫盒图床</option>
+					<option value="ipfs">IPFS图床</option>
+					<option value="imgur">Imgur图床</option>
+					<option value="imgbb">ImgBB图床</option>
+					<option value="ali">阿里图床</option>
+					<option value="jd">京东图床</option>
+					<option value="bjh">百度图床</option>
+					<option value="aichat">aichat图床</option>
+					<option value="imgkr">图壳图床</option>
+					<option value="zhidao">zhidao图床</option>
+					<option value="zyh">zyh图床</option>
+					<option value="chkaja">chkaja图床</option>
+					<option value="smms">smms图床</option>
+					<option disabled>-不推荐使用-</option>
 					<option value="qq">QQ图床</option>
+					<option value="tt">头条图床</option>
 					<option value="ali">阿里图床</option>
 					<option value="jd">京东图床</option>
 					<option value="sg">搜狗图床</option>
 					<option value="c58">58 图床</option>
+					<option value="wy">网易图床</option>
 					<option value="sh">搜狐图床</option>
 					<option value="hl">葫芦侠图床</option>
 					<option value="kefu">KF 图床</option>
-					<option value="baidu">百度图床</option>
-					<option value="douyin">抖音图床</option>
-					<option value="ks">快手图床</option>
-					<option value="lenovo">联想图床</option>
-					<option value="suning">苏宁图床</option>
-					<option value="mt">美团图床</option>
-					<option value="weidian">微店图床</option>
-					<option disabled>-10M限制-</option>
-					<option value="qihoo">360 图床</option>
-					<option value="catbox">猫盒图床</option>
-					<option value="muke">慕课图床</option>
-					<option value="gtimg">极图图床</option>
-					<option value="vimcn">微梦图床</option>
-					<option value="imgbox">图盒图床</option>
-					<option value="bkimg">佰书图床</option>
-					<option disabled>-32M限制-</option>
-					<option value="imgbb">ImgBB</option>
 				</select>
 			</div>
 			<div class="content" id="dragbox">
@@ -84,6 +94,7 @@
 				</svg>
 				<p class="desc">点击上传 / 粘贴上传 / 拖拽上传</p>
 			</div>
+
 		</div>
 		<div class="filelist">
 			<div class="title">上传列表
@@ -100,16 +111,15 @@
 		</div>
 	</div>
 	<div id="footer" style="position:fixed;width: 100%;text-align: center;bottom: 0px;display: block;">
-		<div style="height: 20px">
-			<p>
-				<a style="text-decoration:none;" href="https://figurebed.gd1214b.tk/">gd1214b图床 | </a>
-				<a style="text-decoration:none;" href="https://blog.gd1214b.icu/">gd1214b's blog</a>
+		<div style="height: 40px">
+			<p style="color:#000;font-size: 8px;">gd1214b保留所有权利。 Copyright © 2021 gd1214b. All Rights Reserved.</p>
+
+			<a style="text-decoration:none;" href="https://figurebed.gd1214b.tk/">gd1214b图床</a> | <a
+				style="text-decoration:none;" href="https://blog.gd1214b.icu/">gd1214b's blog</a> | <a
+				style="text-decoration:none;" href="https://github.com/gd1214b/FigureBed">本站源码</a>
 			</p>
 		</div>
-		<p>gd1214b保留所有权利。 Copyright  © 2021 gd1214b. All Rights Reserved.</p>
 	</div>
-	
 </body>
 
 </html>
-
